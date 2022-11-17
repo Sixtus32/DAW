@@ -32,6 +32,9 @@ public class ArrayEjemplo {
     System.out.println("La media de negativos es : " + mediaNegativa);
     System.out.println("La suma total : " + (mediaPositiva + mediaNegativa));
 
+    for(int i = 0; i < num.length; i++){
+      System.out.println(num[i]);
+    }
   
 
   }
