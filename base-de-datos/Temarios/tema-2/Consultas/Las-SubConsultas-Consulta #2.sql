@@ -65,5 +65,66 @@ WHERE salario >= ALL (SELECT salario
 /* cuando sabemos que la subconsulta nos va a devolver una sola fila, usaremos los operadores.*/
 
 
-						
+/*******************************************************************************/
+/*1.	Selecciona los apellidos de aquellos empleados 
+cuyo oficio sea el mismo que el de Gil*/
+SELECT apellido
+FROM empleados 
+WHERE oficio = ( SELECT oficio
+						FROM empleados 
+						WHERE apellido = 'gil'
+                );
+                
+/*2.	2.	Selecciona los apellidos de aquellos 
+empleados cuyo oficio sea el  mismo que el 
+del empleado número 7369.*/
+SELECT apellido
+FROM empleados 
+WHERE oficio = ( SELECT oficio
+                  FROM empleados
+						WHERE emp_no = 7369);
+
+/*!!!!!3.	Selecciona el número de empleado, 
+el apellido y el oficio de aquellos empleados 
+cuyo oficio coincida (distinto) con algún oficio de 
+los empleados del departamento número 20.!!!!!!!*/
+SELECT emp_no, apellido, oficio
+FROM empleados 
+WHERE oficio  = SOME (SELECT DISTINCT oficio 
+                 FROM empleados 
+					  WHERE dept_no = 20);
+					  
+SELECT emp_no, apellido, oficio 
+FROM empleados 
+WHERE oficio IN (SELECT DISTINCT oficio 
+                  FROM empleados
+						WHERE dept_no = 20);
+
+/*4.	Selecciona el apellido, el salario 
+y el número de departamento de aquellos 
+empleados que trabajen en el mismo departamento 
+que el empleado de apellido 'ARROYO' y 
+cuyo salario sea menor que el de éste*/
+SELECT apellido, salario, dept_no
+FROM empleados
+WHERE dept_no = (SELECT dept_no
+                 FROM empleados
+					  WHERE apellido = 'ARROYO')
+					  AND salario < (SELECT salario
+					                 FROM empleados 
+										  WHERE apellido = 'ARROYO');
+					  
+/*5.	Muestra el apellido y el salario de 
+aquellos empleados cuyo salario sea menor 
+que la media de la empresa.*/	
+SELECT apellido, salario
+FROM empleados 
+WHERE salario < AVG(salario);
+
+/*6.	Seleccionar el apellido y el salario de los 
+empleados cuyo salario sea mayor que el mayor 
+salario medio de todos los departamentos.*/
+SELECT apellido, salario
+FROM empleados 
+WHERE salario 
 						
