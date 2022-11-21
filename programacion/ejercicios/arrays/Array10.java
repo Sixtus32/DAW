@@ -1,6 +1,5 @@
 
 import java.util.Scanner;
-
 /*
  *Crea un array de números y otro de String de 10 posiciones 
  donde insertaremos notas entre 0 y 10 
@@ -17,33 +16,42 @@ Después, crearemos un array de String donde insertaremos el resultado de la not
 
 Muestra por pantalla, el alumno su nota y su resultado en palabras. Crea los métodos que creas conveniente.
 
+//Calcular la nota media.
  * */
 
 public class Array10{
   public static void main(String [] args){
+
     Scanner input = new Scanner(System.in);
 
-    float notaAlumnos [] = new float[10];
-    String nombresAlumnos [] = new String[10];
+    System.out.println("Número de alumnos :");
+    int tam = input.nextInt();
+    input.nextLine();
 
-    float nota;
-    String nombre;
+    float notaAlumnos [] = new float[tam];
+    String nombresAlumnos [] = new String[tam];
 
+    float sumaTotal = 0f;
 
-    do {
-      System.out.println("Nombre del alumno : ");
-      nombre = input.nextLine();
-      System.out.println("Nota del alumno: ");
-      nota = input.nextFloat();
+    for(int i = 0; i < notaAlumnos.length; i++){ 
+     System.out.println("Introducir nombre del alumno: ") ;
+     nombresAlumnos[i] = input.nextLine();
+     System.out.println("Introduce la nota del alumno " + nombresAlumnos[i] + " : ") ;
+     notaAlumnos[i] = input.nextFloat();
+     if (notaAlumnos[i] >= 0 || notaAlumnos[i] <= 10){
+       sumaTotal += notaAlumnos[i];
+     }else{
+       System.out.println("Error. Número fuera de rango.");
+     }
+     input.nextLine();
+    }
 
-      for (int i = 0; i < notaAlumnos.length; i++){
-	notaAlumnos[i] = nota;
-        nombresAlumnos[i] = nombre;	
-	System.out.println("El alumno " + nombresAlumnos[i] + " ha sacado esta nota : " + notaAlumnos[i]);
-      }
+    float media = sumaTotal / tam;
+    System.out.println("La media de la clase es : " + media);
 
-
-    }while(nota >= 0.00 && nota <= 10);
     input.close();
-  }
+
+
+  } 
 }
+
