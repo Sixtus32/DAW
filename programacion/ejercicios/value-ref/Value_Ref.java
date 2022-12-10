@@ -3,6 +3,7 @@
 //paso de parámetros por referencia.
 // solo es mutable si hablamos de clases (objetos o tipos complejos): array, String, obj...
 // si se altera la dirección del objeto inicial este cortar el lazo con el anterior.
+
 public class Value_Ref{
   public static void main(String [] args){
    int x = 5;
@@ -11,9 +12,6 @@ public class Value_Ref{
    int [] xy = {5,6};
    intercambioObj(xy);
    System.out.println(" x : " + xy[0] + ", y : " + xy[1]);
-
-   //intercambio(x,y);
-   //System.out.println("x : " + x + ", y : " + y);
   }
   public static void intercambio(int a, int b){
   System.out.println("a : " + a + ", b : " + b);

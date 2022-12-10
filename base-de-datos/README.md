@@ -20,3 +20,10 @@
 > Integridad referencial.
 
 
+Base de datos 
+
+# Diferencia entre CLAVE PRIMARIA Y CLAVE AJENA.  
+- clave primaria → Aquella tabla con su clave principal.  
+- clave ajena → Aquel campo dentro de otra tabla, este porta los mismos datos de tabla de con su clave primaria.Pero puede llevar un Nombre de campo distinto a la de la tabla anterior.
+
+
