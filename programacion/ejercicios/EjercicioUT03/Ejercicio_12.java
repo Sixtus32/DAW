@@ -1,15 +1,10 @@
 import java.util.Scanner;
-
 /*Leer 30 letras y visualizar cuantas aes, es, ies, oes, ues hay.
  * */
-
 public class Ejercicio_12{
   public static void main(String [] args){
-
     evaluteWords();
-
-  }
-  
+  }  
   static void evaluteWords(){
     Scanner inputKey = new Scanner(System.in);
 

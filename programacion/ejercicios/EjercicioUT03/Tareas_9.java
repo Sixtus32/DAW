@@ -36,21 +36,22 @@ public class Tareas_9{
 
    seconds++;
 
-   if (seconds > 60){
+   if (seconds == 60 && minute < 59 && hours < 23){
      seconds = 0;
      minute++;
-       if (minute > 59 ){
-	 minute = 0;
-	 hours++;
-
-	 if (hours > 23){
-	   hours = 0;
-	 }
+     hours++;
+     if(minute == 60 && hours < 23){
+       minute = 0;
+       hours++;
+       if(hours > 23){
+	 hours = 0;
        }
+     }
    }
+   
 
    System.out.println("" + hours + ":"+minute+":"+seconds);
-
+   
    inputData.close();
   }
 }

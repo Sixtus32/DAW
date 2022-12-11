@@ -9,7 +9,7 @@ public class Ejemplo1Matrices{
     //Asignar valores
     for(int i = 0; i < FILAS;i++){
       for(int j = 0;j < COLUMNAS; j++){
-	matriz[i][j] = (byte)(Math.random() * (10) + 1);
+	matriz[i][j] = (byte)(Math.random() * 10 + 1);
       }
     }
     System.out.println(" ");

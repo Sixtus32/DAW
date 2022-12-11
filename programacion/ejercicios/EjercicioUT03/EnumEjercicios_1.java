@@ -1,16 +1,11 @@
 
-    // 1. Declarar el tipo de dato
-enum Days {
-  monday,
-  tuesday,
-  wednesday,
-  thursday,
-  friday,
-  saturday,
-  sunday,
-} 
+// 1. Declarar el tipo de dato
 
-enum DiasLaborables {
+//cuando trabajamos rangos NO usa el switch.
+
+public class EnumEjercicios_1 {
+
+  enum DiasLaborables {
   monday,
   tuesday,
   wednesday,
@@ -20,18 +15,12 @@ enum DiasLaborables {
   sunday,
 
 }
-
-//cuando trabajamos rangos NO usa el switch.
-
-public class EnumEjercicios_1 {
   
   public static void main (String [] args){
-
     DiasLaborables dia = DiasLaborables.monday;
-
     switch(dia){
       case monday: 
-	System.out.println("Is Monday");
+	System.out.println("Es Monday");
 	break;
       case tuesday:
       case wednesday:
