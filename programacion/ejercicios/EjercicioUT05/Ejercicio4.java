@@ -7,6 +7,7 @@ import java.util.StringTokenizer;
 
 public class Ejercicio4{
   public static void main(String [] args){
+
     Scanner input=new Scanner(System.in);
     System.out.println("Introduzca una frase.");
     String word = input.nextLine();
@@ -26,13 +27,16 @@ public class Ejercicio4{
     
     //c. Número de palabras que empiezan por mayúsculas.
     int numberOfWordsUppercase = 0;
+
     StringTokenizer text02=new StringTokenizer(word);
+
     while(text02.hasMoreTokens()){
       String string = text02.nextToken();
       if (string.charAt(0) == string.toUpperCase().charAt(0)){
 	numberOfWordsUppercase++;
       }
     }
+
     System.out.println("\n[3]. Número de palabras empiezan por Máyuscula : " + numberOfWordsUppercase);
 
 
