@@ -1,0 +1,46 @@
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class Ej3{
+  public static void main(String [] args){
+    int array []={11,20,3,15,9,4,12,1,7,13,5,14,19,2};
+
+    System.out.println("\nArray Original : ");
+    for(int i = 0; i < array.length; i++){
+      System.out.print(array[i] + ", ");
+    }
+
+    Scanner entradaDato=new Scanner(System.in);
+    System.out.println("\n\nNúmero a introducir : ");
+    int numero=entradaDato.nextInt();
+    System.out.println("\nPosición en donde introducir : ");
+    int posicion=entradaDato.nextInt();
+    System.out.println("\nArray Modificado : ");
+    insertarElementos(array, numero, posicion);
+    for(int i = 0; i < array.length; i++){
+      System.out.print(array[i] + ", ");
+    }
+
+    System.out.println("\nArray Ordenado : ");
+    Arrays.sort(array);
+    for(int i = 0; i < array.length; i++){
+      System.out.print(array[i] + ", ");
+    }
+  }
+
+
+  public static void insertarElementos(int [] array, int numIntroducir, int posicionIntroducir){
+    
+    int posAux=numIntroducir;
+    if (posicionIntroducir < array.length && posicionIntroducir > 0){
+    for (int i = array.length - 1; i > posicionIntroducir; i--){
+      array[i]=array[i-1];
+    }
+    array[posicionIntroducir]=posAux;
+    }else{
+    System.out.println("\nError, posición introducida se encuentra fuera de rango.");
+    }
+
+  }
+}
+

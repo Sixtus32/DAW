@@ -1,0 +1,44 @@
+Actualmente la mayoría de ordenadores están conectados a alguna red (internet, intranet, etc.) y casi todos lo hacen utilizando el modelo TCP/IP. Este modelo es un protocolo para comunicación en redes que permite que un equipo pueda comunicarse dentro de una red. Está basado en el modelo teórico OSI de capas con la que comparte 4 de ellas; sin embargo, ofrece muchas más opciones y es un modelo práctico.
+
+La comprensión de las características principales de la pila de protocolos de Internet TCP/IP posibilita la configuración de redes básicas, por lo que conocer TCP/IP es fundamental en cualquier formación centrada en trabajar con redes e internet (se llama pila de protocolos a una colección ordenada de protocolos organizados por capas).
+
+El protocolo TCP/IP surgió de un proyecto de defensa llamado DARPA en 1969. En 1983 el nuevo conjunto de protocolos TCP/IP fue adoptado como estándar y finalmente se convirtió en el más usado en redes y el protocolo estándar de internet.
+Qué es TCP/IP
+
+La definición de TCP/IP es la identificación del grupo de protocolos de red que hacen posible la transferencia de datos en redes, entre equipos informáticos e internet. Las siglas TCP/IP hacen referencia a este grupo de protocolos:
+
+    TCP es el Protocolo de Control de Transmisión que permite establecer una conexión y el intercambio de datos entre dos anfitriones. Este protocolo proporciona un transporte fiable de datos.
+    IP o protocolo de internet, utiliza direcciones series de cuatro octetos con formato de punto decimal (como por ejemplo 75.4.160.25). Este protocolo lleva los datos a otras máquinas de la red.
+
+El modelo TCP/IP permite un intercambio de datos fiable dentro de una red, definiendo los pasos a seguir desde que se envían los datos (en paquetes) hasta que son recibidos. Para lograrlo utiliza un sistema de capas con jerarquías (se construye una capa a continuación de la anterior) que se comunican únicamente con su capa superior (a la que envía resultados) y su capa inferior (a la que solicita servicios).
+Capas del modelo TCP/IP
+
+Dentro del modelo TCP/IP existen cuatro niveles o capas que hay que tener en cuenta.
+
+Nivel de enlace o acceso a la red: es la primera capa del modelo y ofrece la posibilidad de acceso físico a la red (que bien puede ser en anillo, ethernet, etc.), especificando el modo en que los datos deben enrutarse independientemente del tipo de red utilizado.
+
+Nivel de red o Internet: proporciona el paquete de datos o datagramas y administra las direcciones IP. (Los datagramas son paquetes de datos que constituyen el mínimo de información en una red). Esta capa es considerada la más simportante y engloba protocolos como IP,ARP, ICMP, IGMP y RARP.
+
+Nivel de Transporte: permiten conocer el estado de la transmisión así como los datos de enrutamiento y utilizan los puertos para asociar un tipo de aplicación con un tipo de dato.
+
+Nivel de Aplicación: es la parte superior del protocolo TCP/IP y suministra las aplicaciones de red tip Telnet, FTP o SMTP, que se comunican con las capas anteriores (con protocolos TCP o UDP).
+
+La capas del modelo TCP/IP coinciden con algunas capas del modelo teórico OSI, aunque tienen tareas mucha más diversas.
+
+La importancia del protocolo TCP/IP es muy elevada ya que permite que los datos enviados lleguen a su destino sin errores y bajo la misma forma en la que fueron enviados.
+Ventajas del modelo TCP/IP
+
+    TCP/IP ofrece ventajas significativas respecto a otros protocolos de red. Una de esas ventajas es que es capaz de trabajar sobre una extensa gama de hardware y soporta muchos sistemas operativos (es multiplataforma). Internet está repleto de pequeñas redes con sus propios protocolos por lo que el uso de TCP/IP se ha estandarizado y es posible utilizarlo como protocolo de comunicación entre redes privadas intranet y extranet, facilitando una red más homogénea.
+    TCP/IP es adecuado tanto para grandes y medianas redes como para redes empresariales o domésticas.
+    TCP/IP está diseñado para enrutar y además presenta gran compatibilidad con las herramientas estándar para analizar y monitorizar el funcionamiento de una red.
+    Es el protocolo estándar que se utiliza a nivel mundial para conectarse a internet y a los servidores web.
+
+Desventajas del modelo TCP/IP
+
+    No distingue bien entre interfaces, protocolos y servicios lo cual afecta al desarrollo de nuevas tecnologías basadas en TCP/IP-
+    En redes con bajo volumen de tráfico puede llegar a ser más lento (en redes con mayor volumen de tráfico, que necesiten gran cantidad de enrutamiento, puede ser mucho más rápido).
+    Cuando se utiliza en servidores de ficheros o servidores de impresión no ofrecen un gran rendimiento.
+
+¿Quieres ampliar tus conocimientos?
+
+Si quieres conocer y comprender el funcionamiento de la pila de protocolos de red, así como aprender a utilizar las configuraciones de red básicas, este curso de TCP/IP es una perfecta introducción a los fundamentos de la redes.

@@ -1,0 +1,9 @@
+Prácticas Windows 10. Parte 1
+Sección 1. Instalación y primeros pasos
+Instalar windows 10 (windows 10 64 bits 21h2) en una máquina virtual. Una vez concluida la instalación instalar VMware tools (VMWare) o Guest Addition (VirtualBox)
+Descargar e instalar Kaspersky VPN free.
+Dentro del disco del pasillo (\\10.75.139.200) en la carpeta software, tenemos otra carpeta llamada Activadores, Descargar el fichero de texto Activar W10. Descargar dicho fichero, abrir CMD como administrador y con la VPN activada activar Windows 10 PRO.
+Comprobar que el equipo se ha activado correctamente. Desde el explorador de archivos → Este equipo → botón derecho propiedades → Cambiar la clave de producto … 
+
+
+Sección 2. Novedades de Windows 10

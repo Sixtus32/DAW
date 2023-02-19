@@ -23,7 +23,5 @@ ntos y malas conductas.i
 
 
 Debéis realizar los ejercicios: 4-5-9-12-14-20-23, de las páginas 63 y siguientes.
-
-
 ## Cyberz
 
