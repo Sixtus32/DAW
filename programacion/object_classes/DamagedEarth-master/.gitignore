@@ -1,0 +1,31 @@
+# Netbeans excludes
+/nbproject/
+/dist/
+/build/
+manifest.mf
+
+# Intellij excludes
+/.idea/
+/DamagedEarth.iml
+/DEProject.iml
+/out/
+
+# Eclipse excludes
+.project
+.classpath
+/bin/
+/.settings/
+
+# OS generated files
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+#Special DamagedEarth related files
+player-location.txt
+player-quests.txt
+player-class.txt
+dumbottom-quests.txt
